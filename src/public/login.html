@@ -72,13 +72,13 @@
     			<h3 class="mb-3">Login</h3>
     			<form action="#" class="volunter-form">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="User Name">
+              <input type="text" class="form-control" placeholder="User Name" id="SI_userName">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Password">
+              <input type="text" class="form-control" placeholder="Password" id="SI_password">
             </div>
             <div class="form-group">
-              <input type="submit" value="Submit" class="btn btn-white py-3 px-5">
+              <input type="submit" value="Submit" class="btn btn-white py-3 px-5" id="SI_submit">
             </div>
           </form>
         </div>   
@@ -86,19 +86,25 @@
     			<h3 class="mb-3">Sign Up</h3>
     			<form action="#" class="volunter-form">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="User Name">
+              <input type="text" class="form-control" placeholder="First Name" id="CA_firstName">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Type">
+              <input type="text" class="form-control" placeholder="Last Name" id="CA_lastName">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Email Address">
+              <input type="text" class="form-control" placeholder="User Name" id="CA_userName">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Password">
+              <input type="text" class="form-control" placeholder="Type" id="CA_type">
             </div>
             <div class="form-group">
-              <input type="submit" value="Submit" class="btn btn-white py-3 px-5">
+              <input type="text" class="form-control" placeholder="Email Address" id="CA_email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Password" id="CA_password">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit" class="btn btn-white py-3 px-5" id="CA_submit">
             </div>
           </form>
     		</div> 			
@@ -144,6 +150,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/api/api.js"></script>
+  <script src="js/api/login.js"></script>
     
   </body>
 </html>

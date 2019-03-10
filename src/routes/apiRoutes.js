@@ -1,13 +1,24 @@
-const router = require("express").Router();
-const postController = require("../controllers/postController");
-const axios = require("axios");
+//const controller = require("../controllers/apiController");
+const account = require("../controllers/accountController");
+const mongoose = require('mongoose');
+const fs = require('fs');
 
-// API Routes
-
-router.route("/test")
-.get(postController.test);
+const userAccount = require("../models/Users");
 
 
-// If no API routes are hit, send the React app
+module.exports = function(app){
 
-module.exports = router;
+    const database = mongoose.connection;
+    database.on('error', console.error.bind(console, 'MongoDB connection error:'));
+    database.once('open', function() {
+        console.log("Database Connection Established!");
+    });
+
+    app.get("/test", function(req, res){
+        return res.json('hello');
+    });
+
+    app.post("/createAccount", account.createAccount);
+    app.post("/login", account.login);
+
+};

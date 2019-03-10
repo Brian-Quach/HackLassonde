@@ -1,3 +1,6 @@
+#neDB
+storage/
+
 # Logs
 logs
 *.log

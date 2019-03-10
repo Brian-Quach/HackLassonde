@@ -1,28 +1,38 @@
-const express = require("express");
-const path = require("path");
-const axios = require("axios");
-const PORT = process.env.PORT || 3001;
-const apiRoutes=require("./routes/apiRoutes");
+const express = require('express');
 const app = express();
 
-// Define middleware here
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// Database
-const mongoose=require("mongoose");
-const uri = "mongodb+srv://Brian:hacklassonde@hlassonde-x6o9m.gcp.mongodb.net/test?retryWrites=true";
+app.use(express.static('static'));
 
+// NeDB for PoC
+const Datastore = require('nedb');
 
-// Use apiRoutes
-app.use("/api",apiRoutes)
+const mongoose = require('mongoose');
+const mongoDb = "mongodb+srv://Brian:hacklassonde@hlassonde-x6o9m.gcp.mongodb.net/test?retryWrites=true";
 
-mongoose.connect(uri, { useNewUrlParser: true });
+mongoose.connect(mongoDb, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
+//const apiRoutes =
+require('./routes/apiRoutes')(app);
+//app.use("/",apiRoutes);
 
 
-app.listen(PORT, function() {
-  console.log(`API server now on port ${PORT}!`);
+app.use(function (req, res, next){
+    console.log("HTTP request", req.method, req.url, req.body);
+    next();
+});
+
+app.use(function (req, res, next){
+    console.log("HTTP Response", res.statusCode);
+    next();
+});
+
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () =>{
+    console.log("Started server on port", PORT);
 });
 
 

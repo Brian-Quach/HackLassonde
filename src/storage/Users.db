@@ -1,0 +1,3 @@
+{"userName":"Brian","password":"Test","_id":"HnJYj3WgqLO5Oc2o"}
+{"userName":"Brian2","password":"Test","_id":"ef90M0X3hG0Ff06V"}
+{"$$indexCreated":{"fieldName":"userName","unique":true,"sparse":false}}

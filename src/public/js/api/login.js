@@ -2,7 +2,7 @@
     "use strict";
 
 
-    window.addEventListener('load', function(){
+    window.addEventListener('load', function(){ 
 
         document.querySelector('#SI_submit').addEventListener('click', function(e){
             let userName = document.querySelector('#SI_userName').value;

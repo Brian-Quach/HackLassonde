@@ -28,6 +28,23 @@
         document.querySelector('form').addEventListener('submit', function(e){
             e.preventDefault();
         });
+
+
+        document.querySelector('#NR_submit').addEventListener('click', function(e){
+            let userName = document.querySelector('#NR_user').value;
+            let reqType = document.querySelector('#NR_type').value;
+            let location = document.querySelector('#NR_location').value;
+            let note = document.querySelector('#NR_note').value;
+            api.createPost(userName, reqType, location, note, function(err, res){
+                if (err) return alert(err);
+                console.log("yay!!");
+                window.location = '/';
+
+            });
+
+            e.preventDefault();
+        });
+
     });
 }());
 

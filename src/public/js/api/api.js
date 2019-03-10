@@ -25,5 +25,13 @@ let api = (function(){
         send("POST", "/createAccount/", {userName: username, password: password, firstName: firstName, lastName: lastName}, callback);
     };
 
+    module.createPost = function (username, type, location, note, callback){
+        send("POST", "/createPost/", {userName: username, title: type, location: location, desc: note}, callback);
+    };
+
+    module.viewAllPosts = function (callback){
+        send("POST", "/viewAllPosts/", null, callback);
+    }
+
     return module;
 })();

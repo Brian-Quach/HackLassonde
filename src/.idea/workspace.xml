@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8867c8b7-149a-49d0-acb3-f936a8eecd43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/api/requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/api/requests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/nearbyrequests.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/nearbyrequests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/requests.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/requests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,7 +27,7 @@
         <counts>
           <entry key="db" value="4" />
           <entry key="html" value="5" />
-          <entry key="js" value="55" />
+          <entry key="js" value="56" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
@@ -39,7 +35,7 @@
         <counts>
           <entry key="HTML" value="5" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="50" />
+          <entry key="JavaScript" value="51" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
@@ -47,13 +43,13 @@
         <counts>
           <entry key="db" value="1" />
           <entry key="html" value="243" />
-          <entry key="js" value="5707" />
+          <entry key="js" value="5711" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="243" />
-          <entry key="JavaScript" value="5637" />
+          <entry key="JavaScript" value="5641" />
           <entry key="PLAIN_TEXT" value="71" />
         </counts>
       </usages-collector>
@@ -64,11 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/apiRoutes.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="27" />
+              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -108,7 +104,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/api/nearby.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
@@ -193,7 +189,6 @@
         <option value="$PROJECT_DIR$/controllers/apiController.js" />
         <option value="$PROJECT_DIR$/models/Users.js" />
         <option value="$PROJECT_DIR$/storage/Users.db" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/routes/apiRoutes.js" />
         <option value="$PROJECT_DIR$/controllers/postController.js" />
         <option value="$PROJECT_DIR$/public/js/fe-js.js" />
@@ -206,6 +201,7 @@
         <option value="$PROJECT_DIR$/storage/Posts.db" />
         <option value="$PROJECT_DIR$/public/js/api/requests.js" />
         <option value="$PROJECT_DIR$/public/js/api/nearby.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -225,7 +221,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="170" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
@@ -341,12 +337,12 @@
       <updated>1552155594087</updated>
       <workItem from="1552155595206" duration="9871000" />
       <workItem from="1552167451178" duration="82000" />
-      <workItem from="1552167553902" duration="29873000" />
+      <workItem from="1552167553902" duration="30477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39826000" />
+    <option name="totallyTimeSpent" value="40430000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -354,7 +350,7 @@
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.16414687" side_tool="true" weight="0.24966888" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.83585316" visible="true" weight="0.24966888" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.83585316" visible="true" weight="0.24966888" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3289855" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -362,7 +358,7 @@
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3289855" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3289855" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -473,13 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
@@ -596,6 +585,13 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
         </state>
       </provider>
     </entry>

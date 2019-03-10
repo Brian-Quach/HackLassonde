@@ -81,9 +81,9 @@
               <div class="form-group">
                 <!-- <input type="text" class="form-control" placeholder="Image URL"> -->
 
-                <form action='/image' method="post" enctype="multipart/form-data">
+                <form action='/image' method="post" id="imageFile" enctype="multipart/form-data">
                <input class="form-control" type='file' name='image' />
-               <input type="submit" value="Upload Photo"/>
+               <input type="button" id="imageButton" value="Upload Photo"/>
                </form>
               </div>
               <!-- ============================== -->
@@ -141,6 +141,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/api/buttonUpload.js"></script>
     
   </body>
 </html>

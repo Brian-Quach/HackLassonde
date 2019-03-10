@@ -77,9 +77,16 @@
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Type of Request">
               </div>
+              <!-- ================================================= -->
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Image URL">
+                <!-- <input type="text" class="form-control" placeholder="Image URL"> -->
+
+                <form action='/image' method="post" enctype="multipart/form-data">
+               <input class="form-control" type='file' name='image' />
+               <input type="submit" value="Upload Photo"/>
+               </form>
               </div>
+              <!-- ============================== -->
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Location">
               </div>
@@ -90,7 +97,7 @@
                 <input type="submit" value="Send Request" class="btn btn-primary py-3 px-5">
               </div>
             </form>
-          </div>
+          </div>newAccount
           <div class="col-md-6" id="map"></div>
         </div>
       </div>

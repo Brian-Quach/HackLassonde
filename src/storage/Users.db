@@ -1,3 +1,5 @@
 {"userName":"Brian","password":"Test","_id":"HnJYj3WgqLO5Oc2o"}
+{"userName":"","password":"","_id":"UQK0sv4blyFy8AJp"}
 {"userName":"Brian2","password":"Test","_id":"ef90M0X3hG0Ff06V"}
+{"userName":"Oleksii","password":"123","_id":"n9RPJ6S9I6qQ6yx2"}
 {"$$indexCreated":{"fieldName":"userName","unique":true,"sparse":false}}

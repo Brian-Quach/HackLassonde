@@ -10,10 +10,6 @@ module.exports = {
         return res.status(200).json("Hello! [Account Controller]");
     },
 
-    listAccounts: function(req, res){
-        return res.status(200).json("List of accounts");
-    },
-
     createAccount: function(req, res) {
         let userName = req.body.userName;
         let password = req.body.password;
@@ -36,10 +32,6 @@ module.exports = {
 
             return res.status(200).json("Success!");
         });
-    },
-
-    currentUser: function(req, res){
-        return res.status(200).json("k");
     }
 
 

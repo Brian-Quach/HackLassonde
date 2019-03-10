@@ -25,6 +25,5 @@ let api = (function(){
         send("POST", "/createAccount/", {userName: username, password: password, firstName: firstName, lastName: lastName}, callback);
     };
 
-
     return module;
 })();
